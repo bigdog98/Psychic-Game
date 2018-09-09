@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>William's Number</title>
+
+<script>
+
+    var yourNumber = Math.floor (Math.Random()*1,000+1);
+
+    function checkguess ()
+    {
+
+var submit = document.getElementById('submit');
+var output = document.getElementById('output');
+var myNumber = submit.value;
+if (myNumber < yourNumber);
+{
+output.value = "Try a lower number.";
+}
+
+else if (myNumber > yourNumber)
+{
+output.value = "Try a higher number.";
+}
+
+else if (myNumber == yourNumber)
+{
+output.value = "You got it!";
+alert ("The number was" + myNumber + "You're a Winner!");
+}
+
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+    <form>
+        Guess a number from 1 to 1,000:
+    <input id="guess" type="text" size="10"/><br>
+    <input type="button" value="submit"/><br>
+    <input id="output" type="text" size="50"><br>
+    </form>
+
+    
+    
+    
+    
+    
+
+</body>
+</html>
